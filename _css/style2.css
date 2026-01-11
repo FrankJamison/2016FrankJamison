@@ -1,0 +1,767 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+	FrankJamison.com Color Palette 
+
+	#4C4341     rgb( 76, 67, 65)	ASH
+	#D7CEC7		rgb(215,206,199)	GRAIN
+	#EDE4D6		rgb(237, 228, 214)	IVORY
+	#47667D		rgb( 49, 71, 87)	SLATE BLUE
+	#FFFFFF		rgb(255,255,255)	WHITE
+*/
+
+/*fonts*/
+@font-face {
+    font-family: 'Cantarell';
+    src: url('../_fonts/Cantarell-Regular-webfont.eot');
+    src: url('../_fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Regular-webfont.woff') format('woff'), url('../_fonts/Cantarell-Regular-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Regular-webfont.svg#webfont9UOzsjXz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('../_fonts/Cantarell-Oblique-webfont.eot');
+    src: url('../_fonts/Cantarell-Oblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Oblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-Oblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Oblique-webfont.svg#webfontRl4nowrT') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('../_fonts/Cantarell-Bold-webfont.eot');
+    src: url('../_fonts/Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Bold-webfont.woff') format('woff'), url('../_fonts/Cantarell-Bold-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Bold-webfont.svg#webfontKr2CkGZp') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('../_fonts/Cantarell-BoldOblique-webfont.eot');
+    src: url('../_fonts/Cantarell-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-BoldOblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-BoldOblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-BoldOblique-webfont.svg#webfontQ1aSR0ux') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cardo";
+    src: url("../_fonts/Cardo99s-webfont.eot");
+    src: url("../_fonts/Cardo99s-webfont.eot?#iefix") format("embedded-opentype"), url("../_fonts/Cardo99s-webfont.woff") format("woff"), url("../_fonts/Cardo99s-webfont.ttf") format("truetype"), url("../_fonts/Cardo99s-webfont.svg#webfontQ5EXXZTZ") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OstrichSansBold';
+    src: url('../_fonts/ostrich-bold-webfont.eot');
+    src: url('../_fonts/ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/ostrich-bold-webfont.woff') format('woff'), url('../_fonts/ostrich-bold-webfont.ttf') format('truetype'), url('../_fonts/ostrich-bold-webfont.svg#OstrichSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*limited reset*/
+html,
+body,
+div,
+section,
+article,
+aside,
+header,
+hgroup,
+footer,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+time,
+span,
+em,
+strong,
+img,
+ol,
+ul,
+li,
+figure,
+canvas,
+video,
+th,
+td,
+tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+}
+
+/*html5 display rule*/
+address,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*page elements*/
+
+html {
+    background-color: rgb(215, 206, 199);
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(76, 67, 65);
+    font: 100% Cantarell, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 auto;
+    position: relative;
+    width: 1280px;
+}
+
+header {
+    background: rgb(49, 71, 87);
+    height: 165px;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-top: 1px;
+}
+
+nav {
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    padding-left: 50px;
+}
+
+article {
+    float: left;
+    padding-left: 50px;
+    width: 850px;
+}
+
+aside {
+    float: right;
+    padding-bottom: 60px;
+    padding-right: 50px;
+    width: 280px;
+}
+
+footer {
+    background: rgb(49, 71, 87);
+    clear: both;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    overflow: hidden;
+    padding: 1em 0 1em;
+}
+
+/*global styles*/
+
+a,
+label.title {
+    color: rgb(76, 67, 65);
+    text-decoration: none;
+}
+
+a:hover,
+label.title:hover {
+    color: rgb(233, 150, 122);
+}
+
+em {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+
+p {
+    font-size: 1em;
+    margin: 1.2em 0;
+}
+
+span {
+    float: right;
+    padding-right: 2px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+.cube {
+    background: url(../_images/cubeLogo35.png) no-repeat right center;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    float: right;
+    vertical-align: middle;
+}
+
+.first {
+    padding-top: 0 !important;
+}
+
+#last {
+    margin-bottom: 60px;
+}
+
+/*header styles*/
+
+header a,
+header a:hover {
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+header .title {
+    background: url(../_images/cubeLogo100.png) no-repeat left center;
+    float: left;
+    font-size: 3.2em;
+    font-weight: bold;
+    line-height: 165px;
+    margin-right: .5em;
+    padding-left: 110px;
+    text-transform: uppercase;
+}
+
+header .subtitle {
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: .1em;
+    line-height: 165px;
+    text-transform: lowercase;
+}
+
+/*nav styles*/
+
+nav a {
+    padding-left: 30px;
+}
+
+nav a.awards {
+    background: url(../_images/awards25.png) no-repeat;
+}
+
+nav a.education {
+    background: url(../_images/education25.png) no-repeat;
+}
+
+nav a.employment {
+    background: url(../_images/employment25.png) no-repeat;
+}
+
+nav a.organizations {
+    background: url(../_images/organizations25.png) no-repeat;
+}
+
+nav a.skills {
+    background: url(../_images/skills25.png) no-repeat;
+}
+
+nav li.awards {
+    background: url(../_images/awards25.png) no-repeat;
+}
+
+nav li.education {
+    background: url(../_images/education25.png) no-repeat;
+}
+
+nav li.employment {
+    background: url(../_images/employment25.png) no-repeat;
+}
+
+nav li.affiliations {
+    background: url(../_images/organizations25.png) no-repeat;
+}
+
+nav li.skills {
+    background: url(../_images/skills25.png) no-repeat;
+}
+
+
+nav em {
+    display: block;
+    font-size: .8em;
+    padding-left: 2em;
+    text-transform: lowercase;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav li {
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    margin-right: 3.6em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav .current {
+    color: rgb(123, 121, 143);
+    cursor: default;
+}
+
+/*banner styles*/
+
+#banner {
+    height: 350px;
+    margin-bottom: 4em;
+    overflow: hidden;
+    padding-left: 50px;
+    position: relative;
+}
+
+#banner .quote {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    height: 250px;
+    left: 35px;
+    padding: 75px 15px 0;
+    position: absolute;
+    top: 0;
+    width: 600px;
+}
+
+#banner .quote p {
+    margin-bottom: .5em;
+}
+
+#banner .title {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    letter-spacing: .1em;
+    padding-top: 300px;
+    text-transform: uppercase;
+}
+
+/*article styles*/
+
+article h1,
+article h2,
+article h3 {
+    font-family: Cardo, Georgia, Times, serif;
+}
+
+/*accordion styles*/
+
+ul.trackAccordion>li.level1 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+ul.trackAccordion>li.level1>a {
+    display: block;
+    position: relative;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+ul.trackAccordion>li.level1>a>h1 {
+    padding-right: 50px;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+ul.trackAccordion>li.level1>a>h1>.cube {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    float: none;
+}
+
+ul.trackAccordion>li.level1>h1 {
+    position: relative;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+ul.trackAccordion>li.level1>h1>a {
+    display: block;
+    padding-right: 50px;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+ul.trackAccordion>li.level1>h1>a>.cube {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    float: none;
+}
+
+.cd-accordion-menu ul {
+    /* by default hide all sub menus */
+    display: none;
+}
+
+.cd-accordion-menu li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cd-accordion-menu input[type=checkbox] {
+    /* hide native checkbox */
+    position: absolute;
+    opacity: 0;
+}
+
+.cd-accordion-menu label,
+.cd-accordion-menu a {
+    position: relative;
+    display: block;
+}
+
+label.title {
+    margin-bottom: 0;
+    padding-top: 2em;
+    font-family: Cardo, Georgia, Times, serif;
+}
+
+label.title.first {
+    padding-top: 1em;
+}
+
+label.title.level1 {
+    border-bottom: 2px solid rgb(76, 67, 65);
+    font-size: 1.6em;
+    padding-top: 1em;
+}
+
+label.title.level2 {
+    margin-bottom: 0;
+    padding-top: 0.5em !important;
+    font-size: 1.4em;
+}
+
+label .subtitle.level2 {
+    margin-bottom: 0;
+    font-size: .85em !important;
+    font-style: italic;
+    float: none;
+}
+
+label.level3 {
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-size: 1.1em !important;
+}
+
+label.level3 .certDate.path {
+    float: right;
+    font-style: italic;
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: -55px;
+    font-family: inherit;
+    font-size: 0.95em;
+}
+
+.cd-accordion-menu label {
+    cursor: pointer;
+}
+
+.cd-accordion-menu input[type=checkbox]:checked+label+ul,
+.cd-accordion-menu input[type=checkbox]:checked+label:nth-of-type(n)+ul {
+    /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+    /* show children when item is checked */
+    display: block;
+}
+
+.cd-accordion-menu ul label,
+.no-touch .cd-accordion-menu ul label:hover,
+.no-touch .cd-accordion-menu>li:last-of-type>label,
+.cd-accordion-menu>li:last-of-type>a,
+.cd-accordion-menu>li>ul>li:last-of-type label,
+.cd-accordion-menu>li>ul>li:last-of-type a {
+    box-shadow: none;
+}
+
+.cd-accordion-menu.animated label::before {
+    /* this class is used if you're using jquery to animate the accordion */
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.filler {
+    line-height: 5px;
+}
+
+/*contact styles*/
+
+#contact {
+    background: rgb(237, 228, 214);
+    padding: 20px;
+    border: none;
+    border-radius: 15px 0 15px 0;
+    font-size: 90%;
+}
+
+#contact a.facebook {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAsRJREFUeNrUWL9v00AUPkeV6ITcAalVGRwxpZPThR9TAmJjCOqExFAj/gD8F0QREmsZGRDJgMRUkYENQTLxYwFPZULNACoSA6eylCm87/RcnV3bZ5s6NZ/0FCv23ff53Xvv7tkSJTCfz136gTkJt2dkgWVZQdF5rQICQNwn65HZR0d/xI+DnyeeW127IJaXz+FSko3JBiRsdipiWMSQrCN/HYr37wKxv/8tUYguqNm8KK5ec4W9ch5/Tck8kyjLIOQB/exAxMvd10pEUUDU7a2boSifBD0uJIZE2BBBtj15+1FM3nwQ/4rujSuie/0yLkcsShrFsJAJxYT74vmrUt7I8tKdu7cQUwjublxQkpghCdl+9nQ3My4ABGp7c0M4zXWxQsuAWFGRS8sq5SG9yHc1x5e9r5F4und/C2NHJMZLFRPGyJCEmDzS2rikYoEzJxOPHj4RyD7dQx4JisdQI5Y1O4gRkxAEY14h8JIuBMD84AEf80bFIH0xME+wImXzCAEOUpYaPODjsqGwpHmlg/TNgzWOjcjk9KafP+2FBEps0nM6wEfL1QE/alDomT4mKZs5EKG9qQKWBvNlzYl7PKavL1MPlbUspPxdeizz9tQy8aZnm7yCFG5vto7TM3Kv3aIMWU8chxKRBea1oQMx46ZtevEMcigl0+5xuS8M8IKfYszFMjkmIVWD+Z2GqBGW8j6IbAlrEMq5vmSntZnWyjO1EzNbNVTKqsH8qgIHKN1nJUg7MwcNPsXLZkoNqRrMK6EjjJkxduKzAPOO9QAeoIIu2jvg48o9OBbDLcQUB6ZFgvmmYQujp7YHlTjFLwLgYa94J+oMq/PRTlS9XJif2xZfb+wiRY8PxyO0E1WlOubF/OCJN3RJFdhHX4P9J81DONfO6BwSmn7CM3mE2xSUE///6ihr12vX8itE7b7PLPLL1V8BBgDG73obtV/8SAAAAABJRU5ErkJggg==) no-repeat left center;
+}
+
+#contact a.google {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA55JREFUeNrMWL9PE1EcfyUk4CA5Ek0kYSiweEytC8JgehIHo0NNJxOHnuEPEKIzYTfiYJyMZRCYiB1qHIyWmEh1oXVpXaAdNCXRhEaHFhf8fq7vne9e73q9Qkm/yUuv7+6+38/7/vh837sQ60KOj48j9IMRdrldoVEIhUKFoHpDAQDA8DKNOA2t0ThiB9WfLc9dGrvIhoeHcFmjkaaxQsAqpwKGg0jRiNUOf7PcToGVy99dgciAJibG2exchGmjI5japmH6gQr5AHlAP6sA8XrrnQUiqADUncQNAWqRAD0NBIZAaABBI5n98IVl339mJxVj/iozrs/gco2DqvmC4UCylBORzVeZrrzRzkt3791GTiG5DRWQG5gUAUm+fLHlyAu4GTkAhcgJIXimmUO/WPSKbs1Vae7tm4+e+XR/IQFAawTGlO8NuuRIEh4RQFAZN29dI0PTnsplcH4CvdBvLiSSZO+rnEMDStWsIkdEaAAEq/AC0q1AP+zAHrfb4pkUqkZOVlSBumo8UyrtsUbjbzN82nkrdLxaOhbYiUZ1vAfaMGwwHF0M5Su7X5+ecijI7xaZ/IycmOT2wB6CLnovBvvgIBGmZaxYrhyRjDbH0z03ICcNF+xyZrdzJg5mlWVMCU9+t8R6Idxu3AoTb3qaH5/wFQQWFECYwgjPgi7cvAP7wAHPRLyanizD54Z64hnYhX3gAJiwG5B6/cjx/7I+yXol3H54wOuBSvmH4z+45rT5RpVBrxsoY2N+RuxNJN65YCWz8CYoIDw57gwpvYNyF9fqnO19JT08wSCOyHTeaW2ZnYtao50AoMo7bnNqUg/4sWRuJ8/OSuCZSrtGh+77rbhvNctOG+KB1LXFewcunbzerCKhtwIwBcRTvODFlM+fbVj9Z0zq0o36/5jLIUCIBW/xsnXMeeyZC4PYxRPh1Ci5ND+uAfFZjbK455hXe1jQDRdUA4fImTQ2Tt1KJOrsY1WfRTkLwrKblhN4BSFQS08uTW9l0RbPqBzVzit867Hi2HZSqLIUgtiTxykHkKVHJhMdvXb4x84RcItOrOy235F1tJOlhybAbFOIDJVnTLpRxi5ebLCwYpHcnVbSxnqm49MC94rZwjP8gLUIkhPhCtKPUC2b6xnfhivCw8l0UT7YtT0dwICuT5GHJq1tgBenlEr7LPcpb5exHzt7nQ4CnZvg1lFtxLWv9OTc1Fcnyr47a/flV4i++z5zll+u/gkwACswGWZAoYg4AAAAAElFTkSuQmCC) no-repeat left center;
+}
+
+#contact a.linked {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAsFJREFUeNrMmD1s01AQx5+jSJQFpUMlKnVwYGqnpAu0A0qoGPgYijpRdYhRJ4QEmZGIgsQc2BHp0MJUkaGIAUEihpZO8USmEg9FRWLAYmk6hfuHc3DjFztxHccnnRK9PL/75d7du3dWhA9pt9sp+oCqkp8NUl1RFH3YdZUhAGC4QLpMmmi1TsTPo1+OeRenp8TExDl8NUkrpEUCMwKBYYgyacb8/Ufs7eqi2TyUgtiBkskZsbCYEonJCxiqkWpeUIoHyGP6KAHi3fbHDsSwAqi7KzcsqDwBvRgKhiASgCDNVT/vi+qnr+Kskl26KrLXr+DrBkOZnjAMUqWYSL3d3PHlDTcv3Vu7g5hCcGd7gWQwZQLJvX613YkLLKCtr5ya8/TJS99AiKf7tB4BbRCMZv8tJomRHDziFqBnEayL9WGH7TlhOGtKiJEgt0YmWB92YI/tOjxTRtYEEayDCOzAHh8b/2GYLoP0DVPYXsbyjuWZAihHvT2y7WLvFOwwyzhZxyFsFyVGxLnoJcL2it07sA+OOKpvv6I3yJlxnoriMT+PAjlNY+qlme6c1vGJaDQOrO2Qpjrs07MdGNXvmXLr9jWhJv8Zbnw7ELNzl6XzbtK8vd26+PD+S18gWkeNBeXufiCWLCymRXp+znVOLOgYwL80KA4MSQym52ddn40HCfFma+dUbCCGHjxcta4P3S0duWcQhL1BirF6vTHwGoAxkBXjFLZvAEaHO8cFZLsz6zG+xZtJj/0clbBdExxWzFRweR6HsN2KPZuKFPE5UA5SFp49f+QYQ6b0jiO9m80frl7hTCt2s4lbiBpu8WEK26tZLYw9tTVQ4hYfhsAOe0VzHHqgo8qZp3aiZHw/7G4XiqDhs6If0UGIs6f3eWwPty15e2Pn2R2MIpX7dQfR7psi1VFGrteO5FuIyL2fCfPN1V8BBgC1+pXDVk2EjQAAAABJRU5ErkJggg==) no-repeat left center;
+}
+
+#contact a.twitter {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAt1JREFUeNrsWDtv01AUvo6QCAPIHZCo6OCwwRRYeAyoAXVA7RDUCYkhRvwAMiNRZUcEdoQ7IDEVOlAxIEjFQMtSPLUT2AMoSAxYLBiWcD7nXGrFjxvboTUSn3QUx497Pp9z7nlYEzkwGAzq9AMxYi67JLamaXbWdbUMBKB4iaRJovv+T/Gl/zVy37Hpo6JaPYhDj2SVpEPE3ImQYRIWyaz37bvYeGsLx/kUSyRMqFabEecv1IU+dQSn1klMFSlNQeQW/XRB4tnKy4BEVoDU1cU5SapNhO5nIkMkdJAgafVevxO9V5uiKBqXz4nGpbM4XGZSnpIME+lRTNSfPH4escaNm4vCoLcN487tB2Nb6dr1BcQUgrsxSqgS80wXRB49XMnlljRgPayL9dnyIpEMx0gLFkkL0CLAulgfelhflAzvmi5iZNIWibMQ9EAf641YxsKumUSwjgPogT5OG7sBzOwcKyFOTp85RXJyNKntptwES/bJJS/W3qQGtEkbAofIQQf4/BJYJrkHOWJ0B4WRdk3lLuil9ZHZTemmJjLrfoD1NoOY4aKn/+2gTbMO9IMH3FRPKnoS77e2hftxSPbK/MUgbsJArMXhB607zlaHforDgIyhyinwK0d+8GDC2xXKPRR3RkWUCP/J/DNk3NHdsddg/S7I2Ejv+0UoVF7sCnfxXi1nSpflIi9YrwceMmZW0TyPg35MTkIhzQvWiylCyELZobdrgaUqgfn+r2h/S72trh8W9tZO8L96aOh2nEMjn2YVtmrnDxmUb6oN69TFz967aymzZRyGbUbUQmgh/ISygKkBY4wcYcJb2wRLdPFp2Nn+kKklnU7YGNDDVjEjeYbZtWFyVTA/JdPLWqWCcWIm1j08trTDg13cqGKRWVvo4lUWgFuM2nExRW8ot6js+hznc/C8Q9U+7Cbch3GH7l0mImahuakIVHNTuSfK0s3apfwKUbrvM3v55eq3AAMAe02W/xUZP0QAAAAASUVORK5CYII=) no-repeat left center;
+}
+
+#contact li a {
+    border: none;
+    display: block;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-bottom: 1em;
+    padding-left: 40px;
+    width: 225px;
+}
+
+#contact .heading {
+    border-bottom: 1px solid rgb(76, 67, 65);
+    font-size: 1em;
+    margin: 1em 0 .5em;
+}
+
+#contact .title {
+    float: none;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+
+/*footer styles*/
+
+#pageFooter {
+    background-color: ;
+}
+
+#pageFooter p {
+    float: right;
+    clear: right;
+    margin-right: 3.9%;
+    text-align: right;
+    width: 300px;
+}
+
+
+/*home page styles*/
+
+#banner.home {
+    background: url(../_images/mainBanner.jpg) no-repeat;
+}
+
+#banner.home .title {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    letter-spacing: .1em;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+#home img {
+    float: left;
+    margin: 0 10px 0 0;
+    height: 100px;
+    width: 100px;
+}
+
+#home .title {
+    border-bottom: 2px solid rgb(76, 67, 65);
+    font-size: 1.8em;
+    margin-bottom: 0;
+    padding: 0 0 5px;
+}
+
+#home .subtitle {
+    text-decoration: underline;
+    font-size: 1.4em;
+    margin-top: 1.5em;
+}
+
+/*employment page styles*/
+
+#banner.employment {
+    background: url(../_images/employmentBanner.jpg) no-repeat;
+}
+
+/*education page styles*/
+
+#banner.education {
+    background: url(../_images/educationBanner.png) no-repeat;
+}
+
+#education .gpa {
+    padding-right: .5em;
+    text-align: right;
+    width: 20%;
+}
+
+#education .gradDate {
+    text-align: right;
+    width: 20%;
+}
+
+#education .course {
+    padding: 1em 3em;
+}
+
+#education .courseName {
+    float: left;
+    margin-left: 50px;
+    list-style: square;
+    width: 100%;
+}
+
+#education .courseGrade {
+    float: right;
+    padding-right: 95px;
+    text-align: right;
+}
+
+#education .certDate {
+    float: right;
+    font-style: italic;
+    padding-right: 55px;
+    text-align: right;
+}
+
+#education .course {
+    padding: 1em 3em;
+}
+
+#education .course.path {
+    padding-left: 1em;
+    padding-bottom: 0;
+}
+
+#education .course.path .title {
+    clear: both;
+    font-size: 1.2em;
+    font-style: italic;
+    display: inline;
+    padding-top: 8em;
+}
+
+
+#education .course.path .certDate {
+    margin-right: -3em;
+}
+
+#education .title.first {
+    padding-top: 1em !important;
+}
+
+/*skills page styles*/
+
+#banner.skills {
+    background: url(../_images/skillsBanner.jpg) no-repeat;
+}
+
+#skills .skill {
+    float: left;
+    width: 33%;
+}
+
+#skills .workSkills {
+    padding: 1em;
+    width: 100%;
+}
+
+ul.trackAccordion>li.level1>ul>li {
+    overflow: hidden;
+}
+
+/*awards page styles*/
+
+#banner.awards {
+    background: url(../_images/awardsBanner.jpg) no-repeat;
+}
+
+#awards .award {
+    padding: 1em 3em;
+}
+
+#awards .awardName {
+    float: left;
+    list-style: square;
+    width: 75%;
+}
+
+#awards .awardDate {
+    float: right;
+    font-style: italic;
+    margin-right: -3em;
+    padding-right: 2px;
+    text-align: right;
+}
+
+/*organizations page styles*/
+
+#banner.organizations {
+    background: url(../_images/organizationsBanner.jpg) no-repeat;
+}
+
+#organizations .office {
+    font-size: .85em;
+    font-style: italic;
+}
+
+#organizations .organization {
+    padding: .5em 3em;
+}
+
+#organizations .organizationName {
+    list-style: square;
+    width: 75%;
+}
